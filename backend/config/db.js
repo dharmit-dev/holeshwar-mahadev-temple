@@ -9,7 +9,7 @@ const connectDB = async () => {
 
   try {
     const conn = await mongoose.connect(uri, {
-      // Mongoose 8 has sensible defaults; these silence deprecation warnings
+      // Mongoose 8 has sensible defaults; these silence deprecation warnings 
       serverSelectionTimeoutMS: 5000,
     });
     console.log(`✅  MongoDB connected: ${conn.connection.host}`);
